@@ -13,12 +13,13 @@ class CreatePricesTable extends Migration
      */
     public function up()
     {
-        $table->increments('id');
-        $table->decimal('value', 10, 2);
-        $table->integer('type');
-        $table->integer('currency_id');
-        $table->integer('product_id');
-          
+        Schema::create('users', function (Blueprint $table) {
+            $table->increments('id');
+            $table->decimal('value', 10, 2);
+            $table->integer('type');
+            $table->integer('currency_id');
+            $table->integer('product_id');
+          });
 
 
     }
@@ -30,6 +31,6 @@ class CreatePricesTable extends Migration
      */
     public function down()
     {
-        //
+          Schema::dropIfExists('users');
     }
 }
