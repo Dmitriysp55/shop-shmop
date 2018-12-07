@@ -9,7 +9,7 @@ class Product extends Model
     //
     protected $fillable = ['name','quantity','category_id'];
 
-    public function tag(){
+    public function tags(){
         return $this->belongsToMany(\App\Models\Tag::class);
     }
 }
