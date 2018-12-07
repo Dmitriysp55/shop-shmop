@@ -20,8 +20,6 @@ class CreatePricesTable extends Migration
             $table->integer('currency_id');
             $table->integer('product_id');
           });
-
-
     }
 
     /**
