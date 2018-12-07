@@ -20,7 +20,8 @@ class Currencies extends Migration
 
           $table->timestamps();
           $table->softDeletes();   // deleted_at
-    }
+      });
+        }
 
     /**
      * Reverse the migrations.
@@ -30,5 +31,6 @@ class Currencies extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('currencies');
     }
 }

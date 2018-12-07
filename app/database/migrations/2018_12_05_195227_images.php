@@ -20,7 +20,8 @@ class Images extends Migration
 
           $table->timestamps();
           $table->softDeletes();   // deleted_at
-    }
+      });
+        }
 
     /**
      * Reverse the migrations.
@@ -30,5 +31,6 @@ class Images extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('images');
     }
 }
