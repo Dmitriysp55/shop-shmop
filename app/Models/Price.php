@@ -8,7 +8,7 @@ class Price extends Model
 {
   protected $fillable = ['value','type','carrency_id','product_id'];
 
-  public function product(){
+  public function products(){
       return $this->hasMany(\App\Models\Product::class);
     }
 }
