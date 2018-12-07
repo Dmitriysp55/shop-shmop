@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,7 +10,7 @@ class Tag extends Model
     protected $fillable = ['name'];
 
     public function product(){
-        return $this->belongsToMany(\App\Product);
+        return $this->belongsToMany(\App\Models\Product::class);
     }
 
 }
