@@ -13,7 +13,7 @@ class Category extends Model
 
 
 //RELATION
-  public function product(){
+  public function products(){
     return $this->hasMany(\App\Models\Product::class);
   }
 
