@@ -17,7 +17,7 @@ class CreatePricesTable extends Migration
             $table->increments('id');
             $table->decimal('value');
             $table->tinyInteger('type');
-            $table->integer('currency_id')->unsigned()->nullable();
+            $table->tinyInteger('currency_id')->unsigned()->nullable();
             $table->integer('product_id')->unsigned()->nullable();
             $table->timestamps();
         });
