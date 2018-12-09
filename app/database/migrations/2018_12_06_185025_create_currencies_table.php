@@ -14,7 +14,7 @@ class CreateCurrenciesTable extends Migration
     public function up()
     {
         Schema::create('currencies', function (Blueprint $table) {
-          $table->increments('id',2);  // tiny increments proverit
+          $table->tinyInteger('id');  // tiny increments proverit
           $table->string('name',30);
           $table->string('currencies_code',3);
 
