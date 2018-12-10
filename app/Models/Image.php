@@ -8,7 +8,7 @@ class Image extends Model
 {
   protected $fillable = ['url','product_id'];
 
-  public function products(){
+  public function product(){
       return $this->belongsTo(\App\Models\Product::class);
     }
 }
