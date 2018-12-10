@@ -16,7 +16,7 @@ class CreatePricesTable extends Migration
         Schema::create('prices', function (Blueprint $table) {
             $table->increments('id');
             $table->decimal('value');
-            $table->tinyInteger('type');
+            $table->tinyInteger('type')->unsigned();
             $table->tinyInteger('currency_id')->unsigned()->nullable();
             $table->integer('product_id')->unsigned()->nullable();
             $table->timestamps();
