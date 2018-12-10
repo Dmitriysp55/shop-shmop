@@ -12,4 +12,16 @@ class Product extends Model
     public function tags(){
         return $this->belongsToMany(\App\Models\Tag::class);
     }
+    
+    public function category(){
+        return $this->belongsTo(\App\Models\Category::class);
+    }
+    
+    public function prices(){
+        return $this->hasMany(\App\Models\Price::class);
+    }
+    
+    public function images(){
+        return $this->hasMany(\App\Models\Image::class);
+    }
 }
