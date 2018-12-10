@@ -9,6 +9,6 @@ class Currency extends Model
   protected $fillable = ['name','currency_code'];
 
   public function prices(){
-      return $this->belongsTo(\App\Models\Price::class);
-    }
+      return $this->hasMany(\App\Models\Price::class);
+   }
 }
