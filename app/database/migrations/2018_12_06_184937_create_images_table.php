@@ -20,7 +20,7 @@ class CreateImagesTable extends Migration
 
           $table->timestamps();
           $table->softDeletes();   // deleted_at
-          // git testing 111
+          // git testing succcessful 
         });
     }
 
