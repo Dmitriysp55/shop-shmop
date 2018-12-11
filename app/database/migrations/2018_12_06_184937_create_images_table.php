@@ -19,7 +19,7 @@ class CreateImagesTable extends Migration
           $table->integer('product_id')->unsigned();
 
           $table->timestamps();
-          $table->softDeletes();   // deleted_at soft
+          $table->softDeletes();   // deleted_at soft 11
         });
     }
 
