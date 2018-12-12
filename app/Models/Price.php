@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Price extends Model
 {
+  
+  static const STANDART = 1;
+  static const DISCOUNT = 2;
+  static const CREDIT   = 3;
+  
   protected $fillable = ['value','type','currency_id','product_id'];
 
   public function product(){
