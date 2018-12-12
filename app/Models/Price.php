@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Price extends Model
 {
-  protected $fillable = ['value','type','carrency_id','product_id'];
+  protected $fillable = ['value','type','currency_id','product_id'];
 
   public function product(){
       return $this->belongsTo(\App\Models\Product::class);

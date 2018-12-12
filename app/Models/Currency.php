@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Currency extends Model
 {
-  protected $fillable = ['name','currency_code'];
+  protected $fillable = ['name','currencies_code'];
 
   public function prices(){
       return $this->hasMany(\App\Models\Price::class);
