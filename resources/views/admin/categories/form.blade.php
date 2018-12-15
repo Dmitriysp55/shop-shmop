@@ -1,6 +1,6 @@
 <h3>Add new category: </h3>
 
-<form action="{{ route('admin') }}" method="POST" >
+<form action="{{ route('admin.store') }}" method="POST" >
     @csrf
     <input type="text" placeholder="category" name="category">
     <button type="submit">Add</button>

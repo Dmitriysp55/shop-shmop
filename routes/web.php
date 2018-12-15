@@ -16,15 +16,15 @@ Route::get('/', function () {
 });
 
 // admin routes
-Route::name('admin')
+Route::name('admin.')
     ->prefix('admin')
     ->namespace('Admin')
     ->group(function()
     {
 
-        Route::get('/categories/create','CategoryController@create');
+        Route::get('/categories/create','CategoryController@create')->name('create');
 
-        Route::post('/categories', 'CategoryController@store');
+        Route::post('/categories', 'CategoryController@store')->name('store');
 
     });
 
